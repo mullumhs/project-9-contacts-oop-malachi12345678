@@ -13,6 +13,7 @@ class Car:
         self.color = color
         self.brand = brand
         self.is_engine_on = False
+        self.odometer = 0
 
     def start_engine(self):
         self.is_engine_on = True
@@ -22,10 +23,15 @@ class Car:
         self.is_engine_on = False
         print(f"The engine of the {self.color} {self.brand} is now off.")
 
+    def drive(self):
+        if self.is_engine_on:
+            self.odometer += distance
+
+
 
 # Add another property to the Car class called "odometer".
 # This property should be initialised to 0.
-
+    
 
 
 # Create two Car objects. One should be a red Toyota and the other a blue Ford.
