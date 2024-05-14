@@ -24,9 +24,10 @@ class Contact:
         Contact.contactCount += 1 
 
     @classmethod     
+    def getContactCount(cls):
+        return Contact.contactCount
 
 contact1 = Contact("crumbobulous micheal" , 21473477 , "crumbobulous micheal@mailmail.mail")
 contact2 = Contact("crumbobulous mikeal" , 21473477 , "crumbobulous mikeal@mailmail.mail")
 
-print(contact1.name , contact1.phone , contact1.email)
-print(contact2.name , contact2.phone , contact2.email)
+print(f":contacts number = {Contact.getContactCount}" )
